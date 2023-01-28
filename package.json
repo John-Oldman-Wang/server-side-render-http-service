@@ -1,0 +1,43 @@
+{
+  "name": "server-side-render-http-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "format": "prettier-tslint fix '**/*.ts'",
+    "prettier": "pretty-quick --staged",
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nokisnojok/server-side-render-http-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nokisnojok/server-side-render-http-service/issues"
+  },
+  "homepage": "https://github.com/nokisnojok/server-side-render-http-service#readme",
+  "dependencies": {
+    "@types/koa": "^2.13.5",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "cross-fetch": "^3.1.5",
+    "koa": "^2.14.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1"
+  }
+}
